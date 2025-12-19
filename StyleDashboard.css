@@ -1,0 +1,125 @@
+.Staff {
+-fx-font-family:"Arial";
+-fx-font-size: 16px;
+-fx-text-fill: #a6a1a1;
+}
+.Department {
+-fx-font-family:"Arial";
+-fx-font-size: 16px;
+-fx-text-fill: #a6a1a1;
+}
+.LeaveRequest {
+-fx-font-family:"Arial";
+-fx-font-size: 16px;
+-fx-text-fill: #a6a1a1;
+}
+.btn{
+-fx-font-family:"Arial";
+-fx-font-size: 13px;
+-fx-text-fill: #f7f7f7;
+-fx-background-color: #0096c7;
+-fx-background-radius:20;
+-fx-effect:null;
+}
+.button:hover{
+-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5),10,0.5,0,2);
+-fx-scale-x:0.96;
+-fx-scale-y:0.96;
+}
+.background{
+-fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #0096c7, #90e0ef);
+}
+.button-anch{
+-fx-background-color: rgba(255,255,255,0.2);
+-fx-background-radius:10;
+}
+.pane1{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #274272, #6c90c3);
+-fx-border-width: 2px 2px 2px 2px ;
+-fx-border-radius: 30px;
+-fx-background-radius: 30px;
+-fx-border-style: solid;
+-fx-border-color:#46a2da;
+}
+.progress{
+-fx-border-width: 2px 2px 2px 2px ;
+-fx-border-radius: 20px;
+-fx-background-radius: 20px;
+}
+.pane12{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #c2d1ec, #6a92cb);
+-fx-border-width: 2px 2px 2px 2px ;
+-fx-border-radius: 30px;
+-fx-background-radius: 30px;
+-fx-border-style: solid;
+-fx-border-color:#46a2da;
+}
+.pane2{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #0a3990, #4fa1eb);
+-fx-border-width: 2px 2px 2px 2px ;
+-fx-border-radius: 30px;
+-fx-background-radius: 30px;
+-fx-border-style: solid;
+-fx-border-color:#46a2da;
+}
+.pane3{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #4fa1ed, #a0d8f4);
+-fx-border-width: 2px 2px 2px 2px ;
+-fx-border-radius: 30px;
+-fx-background-radius: 30px;
+-fx-border-style: solid;
+-fx-border-color:#46a2da;
+}
+.loginBack{
+-fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #0096c7, #90e0ef);
+}
+
+.usersTable{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #4fa1ed, #a0d8f4);
+}
+
+ .inverted-shape {
+  -fx-shape: "M0,0 h250 v250 h-250 z M230,0 A30,30 0 1,1 270,40 A30,30 0 1,1 230,0"; /* Subtract-like SVG arc */
+  -fx-background-color: #3FB8AF;
+  -fx-padding: 0;
+ }
+ .rounded-box {
+  -fx-background-color: #3FB8AF;
+  -fx-background-radius: 20;
+  -fx-pref-width: 250;
+  -fx-pref-height: 250;
+ }
+ .bubble-body {
+     -fx-background-color: #333;
+     -fx-background-radius: 10;
+     -fx-text-fill: white;
+     -fx-padding: 10 20;
+     -fx-font-size: 14px;
+ }
+
+ .bubble-arrow {
+     -fx-fill: #333;
+ }
+ .chart-series-line {
+     -fx-stroke: #0096c7;
+     -fx-stroke-width: 2px;
+ }
+
+ .default-color0.chart-line-symbol {
+     -fx-background-color: #0096c7, white;
+     -fx-background-radius: 4px;
+     -fx-padding: 4px;
+ }
+ .chart-bar{
+ -fx-bar-gap: 20px;
+ -fx-bar-fill: blue;
+ -fx-category-gap: 50px;
+ }
+ .btns{
+ -fx-font-family:"Arial";
+ -fx-font-size: 20px;
+ -fx-text-fill: #f7f7f7;
+ -fx-background-color: #0096c7;
+ -fx-background-radius:20;
+ -fx-effect:null;
+}

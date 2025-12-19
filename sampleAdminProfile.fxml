@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1270.0" styleClass="background" stylesheets="@StyleDashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAdminProfile">
+    <children>
+        <Text fill="#f7f7f7" layoutX="400.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Information :" wrappingWidth="619.354248046875" AnchorPane.bottomAnchor="573.828125" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="250.645751953125" AnchorPane.topAnchor="22.546875">
+            <font>
+                <Font name="Arial Bold" size="48.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="256.0" fitWidth="235.0" layoutX="1013.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ImageOfProject/users-vector-icon-png_260862-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="21.0" layoutY="25.0" prefHeight="620.0" prefWidth="350.0" style="-fx-background-color: #0096c7; -fx-background-radius: 20;" styleClass="button-anch" stylesheets="@StyleDashboard.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <Button fx:id="btnAdminProfile" layoutX="114.0" layoutY="141.0" mnemonicParsing="false" onAction="#LoadAdminProfile" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="MY PROFILE" textFill="#ccc6c6">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnAllUsers" layoutX="114.0" layoutY="223.0" mnemonicParsing="false" onAction="#LoadAllUsers" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" stylesheets="@StyleDashboard.css" text="USERS" textFill="#ccc6c6">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="button" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="btnAddEmployee" layoutX="114.0" layoutY="305.0" mnemonicParsing="false" onAction="#LoadAddEmployee" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="ADD EMPLOYEE" textFill="#ccc6c6">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnUsersLeavesHistory" layoutX="115.0" layoutY="387.0" mnemonicParsing="false" onAction="#LoadUsersLeavesHistory" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="LEAVES HISTORY" textFill="#ccc6c6">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="29.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="29.0">
+                    <image>
+                        <Image url="@ImageOfProject/WhatsApp_Image_2025-05-16_at_4.49.29_PM__1_-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="47.0" fitWidth="60.0" layoutX="36.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ImageOfProject/WhatsApp_Image_2025-05-16_at_4.49.30_PM-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="37.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ImageOfProject/WhatsApp_Image_2025-05-19_at_9.15.34_PM-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="34.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ImageOfProject/WhatsApp_Image_2025-05-17_at_1.02.59_PM-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnLogOut" layoutX="116.0" layoutY="552.0" mnemonicParsing="false" onAction="#LoadLogOut" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20px;" styleClass="btn" stylesheets="@StyleDashboard.css" text="LOG OUT " textAlignment="CENTER" textFill="#ccc6c6">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="35.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ImageOfProject/pngtree-vector-logout-icon-png-image_947079-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnDashboard2" layoutX="114.0" layoutY="61.0" mnemonicParsing="false" onAction="#LoadDashboard2" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" text="DASHBOARD" textFill="#ccc6c6">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <stylesheets>
+                        <URL value="@StyleDashboard.css" />
+                        <URL value="@StyleDashboard.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn" />
+                        <String fx:value="button" />
+                    </styleClass>
+                </Button>
+                <ImageView fitHeight="77.0" fitWidth="93.0" layoutX="22.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ImageOfProject/WhatsApp_Image_2025-05-16_at_4.49.29_PM__2_-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+      <Label fx:id="adminID" alignment="CENTER" contentDisplay="CENTER" layoutX="514.0" layoutY="112.0" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Admin ID " textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mobileNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="515.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Mobile number" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstName" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="179.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="First name" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthday" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="515.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Birthday" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="password" alignment="CENTER" contentDisplay="CENTER" layoutX="494.0" layoutY="583.0" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Password" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="246.0" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Email" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="city" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="314.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="City" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="country" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="314.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Country" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="address" alignment="CENTER" contentDisplay="CENTER" layoutX="494.0" layoutY="380.0" prefHeight="33.0" prefWidth="406.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Address" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="department" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="448.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Department" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gender" alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="448.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Gender" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastName" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="179.0" prefHeight="33.0" prefWidth="255.0" style="-fx-background-color: transparent; -fx-border-color: #f7f7f7; -fx-border-width: 0px 0px 2px 0px;" text="Last name" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAbsenceToday" layoutX="112.0" layoutY="476.0" onAction="#LoadAbsenceToday" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6;" styleClass="btn" text="ABSENCE TODAY" textFill="#ccc6c6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="92.0" layoutX="17.0" layoutY="455.0" preserveRatio="true">
+         <image>
+            <Image url="@ImageOfProject/WhatsApp_Image_2025-07-13_at_4.42.03_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

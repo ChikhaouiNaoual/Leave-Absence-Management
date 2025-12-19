@@ -1,0 +1,26 @@
+
+.loginBack{
+-fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #0096c7, #90e0ef);
+}
+.logout{
+    -fx-background-color: #106abf;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+.radius{
+    -fx-background-radius: 8px;
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, #098c53, #246861); 
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+}
+.vbox {
+-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0096c7, #00b4d8, #48cae4);
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1270.0" styleClass="background" stylesheets="@StyleDashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSetting">
+   <children>
+      <AnchorPane layoutX="124.0" layoutY="4.0" prefHeight="643.0" prefWidth="14.0" style="-fx-background-color: #f7fdf5; -fx-background-radius: 20px;" />
+      <Text fill="#f7f7f7" layoutX="430.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER PASSWORD :">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="UserId" layoutX="611.0" layoutY="182.0" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-border-color: #03045e; -fx-border-radius: 10px;" />
+      <TextField fx:id="UserName" layoutX="611.0" layoutY="274.0" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-border-color: #03045e; -fx-border-radius: 10px;" />
+      <TextField fx:id="Password" layoutX="611.0" layoutY="365.0" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-border-color: #03045e; -fx-border-radius: 10px;" />
+      <Text fill="#f7f7f7" layoutX="431.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER ID :">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f7f7f7" layoutX="431.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER NAME :">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f7f7f7" layoutX="385.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Employee To Login">
+         <font>
+            <Font name="Arial Bold" size="39.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" alignment="CENTER" layoutX="661.0" layoutY="463.0" mnemonicParsing="false" onAction="#OnActionAdd" prefHeight="51.0" prefWidth="128.0" styleClass="btn" stylesheets="@StyleDashboard.css" text="Add" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" alignment="CENTER" layoutX="232.0" layoutY="562.0" mnemonicParsing="false" onAction="#onActionBack" prefHeight="51.0" prefWidth="128.0" styleClass="btn" stylesheets="@StyleDashboard.css" text="Back" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="1128.0" layoutY="7.0" prefHeight="643.0" prefWidth="14.0" style="-fx-background-color: #f7fdf5; -fx-background-radius: 20px;" />
+   </children>
+</AnchorPane>

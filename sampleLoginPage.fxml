@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLoginPage">
+
+   <children>
+
+      <!-- LEFT SIDE BOX (Branding) -->
+      <VBox alignment="CENTER" layoutX="145.0" layoutY="26.0" prefHeight="598.0" prefWidth="409.0" spacing="20" style="-fx-background-radius: 30px;" styleClass="vbox" stylesheets="@Styleloginpage.css" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <Text fill="#f7f7f7" text="WELCOME TO">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="150.0" />
+               </VBox.margin>
+            </Text>
+      
+            <Text fill="#f7f7f7" text="LEAVE WISE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+            </Text>
+      
+            <ImageView fitHeight="189.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-13_at_9.42.55_PM-removebg-preview.png" />
+               </image>
+            </ImageView>
+      
+            <Text fill="#023e8a" text="--Smartly Manage Your Time Off--">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+
+      <!-- RIGHT SIDE LOGIN FORM -->
+      <VBox alignment="CENTER" layoutX="644.0" layoutY="132.0" prefHeight="449.0" prefWidth="500.0" spacing="15.0" AnchorPane.leftAnchor="644.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="132.0">
+         <children>
+
+            <HBox spacing="10">
+               <Text fill="#0096c7" text="Authenticate">
+                  <font>
+                     <Font name="Verdana Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text fill="#0096c7" text="to access your account." wrappingWidth="193.47393798828125">
+                  <font>
+                     <Font name="Verdana" size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets top="3.0" />
+                  </HBox.margin>
+               </Text>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+
+            <TextField fx:id="txtusername" alignment="CENTER" prefHeight="27.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0096c7; -fx-border-width: 0 0 2 0;">
+               <VBox.margin>
+                  <Insets left="100.0" right="200.0" />
+               </VBox.margin></TextField>
+
+            <PasswordField fx:id="txtpassword" alignment="CENTER" prefHeight="27.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0096c7; -fx-border-width: 0 0 2 0;">
+               <VBox.margin>
+                  <Insets left="200.0" right="100.0" top="40.0" />
+               </VBox.margin></PasswordField>
+
+            <Button fx:id="login" onAction="#OnActionLogin" prefHeight="49.0" prefWidth="180.0" stylesheets="@StyleDashboard.css" text="Login">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="button" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </Button>
+
+            <Hyperlink fx:id="hyperlink" onAction="#OnActionHyperlink" text="Forgot Your Password?">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="100.0" top="50.0" />
+               </VBox.margin>
+            </Hyperlink>
+
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1270.0" styleClass="background" stylesheets="@StyleDashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAllUsers">
+   <children>
+      <AnchorPane layoutX="41.0" layoutY="45.0" prefHeight="620.0" prefWidth="350.0" style="-fx-background-color: #0096c7; -fx-background-radius: 20;" styleClass="button-anch" stylesheets="@StyleDashboard.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Button fx:id="btnAdminProfile" layoutX="114.0" layoutY="141.0" mnemonicParsing="false" onAction="#LoadAdminProfile" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="MY PROFILE" textFill="#ccc6c6">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAllUsers" layoutX="114.0" layoutY="223.0" mnemonicParsing="false" onAction="#LoadAllUsers" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="USERS" textFill="#ccc6c6">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddEmployee" layoutX="114.0" layoutY="305.0" mnemonicParsing="false" onAction="#LoadAddEmployee" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="ADD EMPLOYEE" textFill="#ccc6c6">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUsersLeavesHistory" layoutX="115.0" layoutY="387.0" mnemonicParsing="false" onAction="#LoadUsersLeavesHistory" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="LEAVES HISTORY" textFill="#ccc6c6">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="84.0" fitWidth="70.0" layoutX="29.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="29.0">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-18_at_12.09.28_AM-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="60.0" layoutX="36.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-16_at_4.49.30_PM-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="37.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-19_at_9.15.34_PM-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="34.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-17_at_1.02.59_PM-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogOut" layoutX="116.0" layoutY="552.0" mnemonicParsing="false" onAction="#LoadLogOut" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20px;" styleClass="btn" stylesheets="@StyleDashboard.css" text="LOG OUT" textAlignment="CENTER" textFill="#ccc6c6">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="35.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/pngtree-vector-logout-icon-png-image_947079-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnDashboard2" layoutX="114.0" layoutY="61.0" mnemonicParsing="false" onAction="#LoadDashboard2" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="DASHBOARD" textFill="#ccc6c6">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="77.0" fitWidth="93.0" layoutX="22.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ImageOfProject/WhatsApp_Image_2025-05-16_at_4.49.29_PM__2_-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="allUsersTable" layoutX="402.0" layoutY="156.0" prefHeight="288.0" prefWidth="819.0" style="-fx-border-color: #03045e; -fx-border-radius: 5px;">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="colUser_Name" prefWidth="110.0" text="UserName" />
+            <TableColumn fx:id="colName" prefWidth="129.0" text="Full Name" />
+            <TableColumn fx:id="colEmail" prefWidth="194.33331298828125" text="Email" />
+            <TableColumn fx:id="colCountry" minWidth="0.0" prefWidth="113.6666259765625" text="Country" />
+            <TableColumn fx:id="colGender" minWidth="0.0" prefWidth="102.0" text="Gender" />
+            <TableColumn fx:id="colDepartment" prefWidth="121.0" text="Department" />
+        </columns>
+      </TableView>
+      <Text fill="#f7f7f7" layoutX="423.0" layoutY="77.453125" strokeType="OUTSIDE" strokeWidth="0.0" text="USERS INFORMATIONS" AnchorPane.leftAnchor="423.0" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font name="Arial Bold" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnDeleteUsers" layoutX="504.0" layoutY="525.0" mnemonicParsing="false" onAction="#LoadDeleteUsers" prefHeight="50.0" prefWidth="141.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="Delete" textFill="#ccc6c6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateUsers" layoutX="747.0" layoutY="525.0" mnemonicParsing="false" onAction="#LoadUpdateUsers" prefHeight="50.0" prefWidth="141.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="Update" textFill="#ccc6c6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddUsers" layoutX="982.0" layoutY="525.0" mnemonicParsing="false" onAction="#LoadAddUsers" prefHeight="50.0" prefWidth="141.0" style="-fx-background-color: #0077b6; -fx-background-radius: 20;" styleClass="btn" stylesheets="@StyleDashboard.css" text="Add" textFill="#ccc6c6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtSearch2" layoutX="1056.0" layoutY="16.0" onAction="#setupSearchFilter2" prefHeight="25.0" prefWidth="208.0" promptText="Search here" style="-fx-border-color: #005fea; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="1012.0" layoutY="7.0">
+         <image>
+            <Image url="@ImageOfProject/search-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAbsenceToday" layoutX="115.0" layoutY="476.0" onAction="#LoadAbsenceToday" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0077b6;" styleClass="btn" text="ABSENCE TODAY" textFill="#ccc6c6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="92.0" layoutX="20.0" layoutY="455.0" preserveRatio="true">
+         <image>
+            <Image url="@ImageOfProject/WhatsApp_Image_2025-07-13_at_4.42.03_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
